@@ -192,8 +192,6 @@ img {
 
 .haeder-link {
   display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -203,6 +201,22 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #212121;
+}
+
+@media screen and (min-width: 480px) {
+  .haeder-link {
+    padding: 0;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .haeder-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
 }
 
 .haeder-link:hover,
@@ -315,7 +329,7 @@ img {
   height: 40px;
   padding: 0;
   border: none;
-  /*background-color: transparent;*/
+  background-color: transparent;
 }
 
 .button__hmenu .cross {
@@ -783,6 +797,13 @@ img {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/header.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header.jpg);
   background-size: 100% 100%;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/header@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header@2x.jpg);
+  }
 }
 
 .hero-haed {
