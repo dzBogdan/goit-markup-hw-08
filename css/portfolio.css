@@ -255,6 +255,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -357,6 +360,7 @@ img {
     top: 100%;
     left: 0;
     width: 100%;
+    padding-bottom: 60px;
     background-color: #ffffff;
   }
 }
@@ -364,6 +368,7 @@ img {
 @media screen and (min-width: 768px) {
   .head__menu {
     position: static;
+    padding-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -612,6 +617,10 @@ img {
   .flink-list {
     margin-left: 0;
   }
+}
+
+.footer-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {

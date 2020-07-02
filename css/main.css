@@ -255,6 +255,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -357,6 +360,7 @@ img {
     top: 100%;
     left: 0;
     width: 100%;
+    padding-bottom: 60px;
     background-color: #ffffff;
   }
 }
@@ -364,6 +368,7 @@ img {
 @media screen and (min-width: 768px) {
   .head__menu {
     position: static;
+    padding-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -614,6 +619,10 @@ img {
   }
 }
 
+.footer-link:not(:last-child) {
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 768px) {
   .prisoed {
     margin-left: 120px;
@@ -800,7 +809,7 @@ img {
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero {
+  .hero .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/header@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header@2x.jpg);
   }
@@ -1333,6 +1342,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.tmlink-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .tmlink-link {

@@ -12,10 +12,8 @@
   
     background-image:linear-gradient(to right,rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)), url(../images/header.jpg);
     background-size: 100% 100%;
-    
-  }
-  
-  @media screen and (min-device-pixel-ratio: 2),
+
+     @media screen and (min-device-pixel-ratio: 2),
   screen and (-webkit-min-device-pixel-ratio: 2),
   screen and (-o-min-device-pixel-ratio: 2/1),
   screen and (min-resolution: 192dpi),
@@ -23,6 +21,10 @@
   .hero {
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)), url(../images/header@2x.jpg);;
   }
+    
+  }
+  
+ 
 }
 
   .hero-haed {
@@ -541,6 +543,10 @@
     align-items: center;
 }
 
+.tmlink-item:not(:last-child){
+  margin-right: 10px;  
+}
+
 .tmlink-link{
     width: 44px;
     height: 44px;
@@ -555,6 +561,7 @@
     &:hover,&:focus .team__svg{
       fill: $white-color;
     }
+
 }
 
 

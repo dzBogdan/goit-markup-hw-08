@@ -191,6 +191,11 @@
       margin-left: 0;
     } 
   }
+
+  .footer-link:not(:last-child){
+    margin-right: 10px;
+
+  }
   
   .prisoed{
     @media screen and (min-width:768px){
