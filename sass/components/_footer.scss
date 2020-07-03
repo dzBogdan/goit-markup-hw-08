@@ -61,7 +61,11 @@
     letter-spacing: 0.03em;
     color: $white-color;
     text-align: center;
-  
+    
+    @media screen and (max-width:480px){
+     margin-left: 80px;
+    } 
+     
     @media screen and (min-width:480px){
       margin-left: 163px;
     }
@@ -92,6 +96,10 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width:480px){
+      margin-left: 50px;
+     } 
   
     @media screen and (min-width:480px){
       text-align: center;
@@ -143,6 +151,10 @@
     letter-spacing: 0.03em;
   
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (max-width:480px){
+      margin-left: 80px;
+     } 
   
     @media screen and (min-width:480px){
       text-align: center;
@@ -161,6 +173,10 @@
   
   
   .flink{
+    @media screen and (max-width:480px){
+      margin-left: 50px;
+     } 
+
     @media screen and (min-width:480px){
       text-align: center;
     }
@@ -177,6 +193,9 @@
   .flink-list{
     display: flex;
     justify-content: center;
+    @media screen and (max-width:480px){
+      margin-bottom: 60px;
+     } 
   
     @media screen and (min-width:480px){
      margin-bottom: 60px;
@@ -281,6 +300,17 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+   
+    @media screen and (max-width:480px){
+      width: 100%;
+  
+     } 
+
+     @media screen and (min-width:480px){
+      width: 100%;
+  
+     } 
+
     @media screen and (min-width:768px){
       margin-left: 150px;
    }
@@ -314,6 +344,17 @@
     .footer__input:not(:placeholder-shown) + &{
       top: -20px;
     }
+    @media screen and (max-width:480px){
+      left: 10px;
+     } 
+    
+     @media screen and (min-width:480px){
+      left: 10px;
+     } 
+
+     @media screen and (min-width:768px){
+      left: 160px;
+     } 
    
     @media screen and (min-width:1200px){
       left:10px;
@@ -340,6 +381,10 @@
   
     color: $white-color;
     background-color: $secondery-color;
+
+    @media screen and (max-width:480px){
+      margin-left: 50px;
+     } 
     
     @media screen and (min-width:480px){
       margin-left: 140px;

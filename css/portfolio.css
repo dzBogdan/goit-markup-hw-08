@@ -121,14 +121,37 @@ img {
 }
 
 .header-logo {
-  margin-right: 85px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (max-width: 480) {
+  .header-logo {
+    margin-right: 0;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 480) {
+  .header-logo {
+    margin-right: 85px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
 }
 
 .header .logo {
@@ -142,6 +165,32 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .header-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.header-list {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -178,9 +227,14 @@ img {
   }
 }
 
+.haeder-item {
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 480px) {
   .haeder-item {
     text-align: center;
+    margin-bottom: 0;
   }
 }
 
@@ -201,6 +255,12 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #212121;
+}
+
+@media screen and (max-width: 480px) {
+  .haeder-link {
+    padding-bottom: 8px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -226,6 +286,23 @@ img {
 
 .haeder-item:last-child {
   margin-right: 0;
+}
+
+.haeder-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.haeder-info:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 480px) {
@@ -327,7 +404,6 @@ img {
 
 .button__hmenu {
   display: block;
-  margin-left: 165px;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -350,6 +426,23 @@ img {
 @media screen and (min-width: 768px) {
   .button__hmenu {
     display: none;
+  }
+}
+
+.head__menu {
+  display: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 480) {
+  .head__menu {
+    width: 300px;
   }
 }
 
@@ -473,6 +566,12 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    margin-left: 80px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .footer-logo {
     margin-left: 163px;
@@ -504,6 +603,12 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-addres {
+    margin-left: 50px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -556,6 +661,12 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 480px) {
+  .footer-info {
+    margin-left: 80px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .footer-info {
     text-align: center;
@@ -579,6 +690,12 @@ img {
   margin-bottom: 21px;
 }
 
+@media screen and (max-width: 480px) {
+  .flink {
+    margin-left: 50px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .flink {
     text-align: center;
@@ -599,6 +716,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .flink-list {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -709,6 +832,18 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+  .footer__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__input {
     margin-left: 150px;
@@ -743,6 +878,24 @@ img {
   top: -20px;
 }
 
+@media screen and (max-width: 480px) {
+  .fform__span {
+    left: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .fform__span {
+    left: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fform__span {
+    left: 160px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .fform__span {
     left: 10px;
@@ -769,6 +922,12 @@ img {
   text-align: center;
   color: #ffffff;
   background-color: #2196f3;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__button {
+    margin-left: 50px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -813,6 +972,36 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .button-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button__item {
+    margin-left: 80px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -928,6 +1117,12 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .picture__img {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .picture__img {
     width: 450px;
@@ -991,6 +1186,22 @@ img {
   font-size: 18px;
   line-height: 2;
   color: #212121;
+}
+
+@media screen and (max-width: 480px) {
+  .item-h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
 
 .picture-p {
