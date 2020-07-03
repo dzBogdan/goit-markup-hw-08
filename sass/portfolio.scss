@@ -14,7 +14,7 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    @media screen and (max-width:480px){
+    @media screen and (max-width:479px){
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -23,12 +23,12 @@
   }
 
   .button__item {
-    @media screen and (max-width:480px){
+    @media screen and (max-width:479px){
       &:not(:last-child){
         margin-bottom: 20px;
       }
     }
-    @media screen and (max-width:480px){
+    @media screen and (max-width:479px){
       margin-left: 80px;
      } 
 
@@ -149,7 +149,7 @@
   
   .picture__img{
 
-    @media screen and (max-width:480px){
+    @media screen and (max-width:479px){
       width: 100%;
      } 
 
@@ -214,7 +214,7 @@
   font-size: 18px;
   line-height: 2;
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width:479px){
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;  
